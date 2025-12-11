@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>FIFO Engineering</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/logo/fifo-eng-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/dripicons.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/meanmenu.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body class="fifo-eng">
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <!-- LOGO -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://fifogroup.in/images/fifo-industries/fifo-ind-logo.png" width="60" class="mr-2" />
+            <!-- <span class="font-weight-bold">FD GROUP</span> -->
+          </a>
+
+          <!-- TOGGLER -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mainMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- MENU -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="mainMenu"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About</a>
+              </li>
+
+              <!-- DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="aboutDropdown"
+                  data-toggle="dropdown"
+                >
+                  Products
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="checking-fixtures.html"
+                    >Checking Fixtures</a
+                  >
+                  <a class="dropdown-item" href="machining-fixtures.html"
+                    >Machining Fixtures</a
+                  >
+                  <a class="dropdown-item" href="welding-fixtures.html"
+                    >Welding Fixtures</a
+                  >
+                  <a class="dropdown-item" href="holding-fixtures.html"
+                    >Holding Fixtures</a
+                  >
+                  <a class="dropdown-item" href="inspection-gauges.html"
+                    >Inspection Gauges</a
+                  >
+                  <a class="dropdown-item" href="press-tools-die-set.html"
+                    >Press tools & DIE Set</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="aboutDropdown"
+                  data-toggle="dropdown"
+                >
+                  Our Machine
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="checking-fixtures.html"
+                    >Machinary</a
+                  >
+                  <a class="dropdown-item" href="machining-fixtures.html"
+                    >Measuring Instruments</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clients.html">Our Clients</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contactus">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main-area -->
+    <main>
+      <section
+        class="breadcrumb-area d-flex align-items-center"
+        style=" 
+          background: linear-gradient(#130101db),
+            url(../img/breadcrum.jpg) no-repeat center center / cover;
+        "
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+              <div class="breadcrumb-wrap text-center">
+                <div class="breadcrumb-title">
+                  <h2>FIFO Engineering</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about-area -->
+
+   
+
+      <!-- blog-area -->
+   
+      <!-- blog-area-end -->
+
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+            color: #1a1a1a;
+            overflow-x: hidden;
+        } */
+
+        .about-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 100px 40px;
+            position: relative;
+        }
+
+        .floating-element {
+            position: absolute;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .float-1 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.08), transparent);
+            top: 10%;
+            right: -100px;
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .float-2 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(79, 172, 254, 0.08), transparent);
+            bottom: 20%;
+            left: -50px;
+            border-radius: 50%;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-30px) scale(1.05); }
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+            animation: fadeInUp 0.8s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #fff5f0, #ffe8dc);
+            color: #364356;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            border: 2px solid rgb(0 0 0 / 22%);
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.1);
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .section-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.2);
+        }
+
+        .section-title {
+            font-size: 56px;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            letter-spacing: -2px;
+        }
+
+        .section-title .highlight {
+            background: linear-gradient(135deg, #ff6b35, #f7931e) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text !important;
+            position: relative !important;
+            display: inline-block !important;
+        }
+
+        .section-title .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.3), rgba(247, 147, 30, 0.3));
+            transform: skewY(-2deg);
+            z-index: -1;
+        }
+
+        .section-description {
+            font-size: 19px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .content-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            margin-bottom: 100px;
+            animation: fadeInUp 1s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content-left {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            padding: 36px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInLeft 0.8s ease;
+            animation-fill-mode: both;
+        }
+
+        .feature-item:nth-child(1) { animation-delay: 0.2s; }
+        .feature-item:nth-child(2) { animation-delay: 0.4s; }
+        .feature-item:nth-child(3) { animation-delay: 0.6s; }
+
+        .feature-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.05), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .feature-item:hover::before {
+            left: 100%;
+        }
+
+        .feature-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.03), rgba(247, 147, 30, 0.03));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 0;
+        }
+
+        .feature-item:hover {
+            transform: translateX(12px) translateY(-8px);
+            box-shadow: 0 20px 60px rgba(255, 107, 53, 0.15);
+            border-color: rgba(255, 107, 53, 0.3);
+        }
+
+        .feature-item:hover::after {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            min-width: 64px;
+            /* background: linear-gradient(135deg, #3c241b, #422d15); */
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+            transition: all 0.4s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-icon::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            background: linear-gradient(135deg, #0b0705, #f7931e);
+            border-radius: 20px;
+            opacity: 0;
+            filter: blur(8px);
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .feature-item:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.4);
+        }
+
+        .feature-item:hover .feature-icon::before {
+            opacity: 0.7;
+        }
+
+        .feature-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-content h3 {
+            font-size: 23px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .feature-item:hover .feature-content h3 {
+            color: #ff6b35;
+        }
+
+        .feature-content p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .content-right {
+            position: relative;
+            animation: fadeInRight 0.8s ease;
+        }
+
+        .image-wrapper {
+            position: relative;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
+            transition: all 0.5s ease;
+        }
+
+        /* .image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.4), rgba(247, 147, 30, 0.3));
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .image-wrapper:hover::before {
+            opacity: 1;
+        } */
+
+        .image-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 3px solid transparent;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: 3;
+        }
+
+        .image-wrapper:hover::after {
+            opacity: 1;
+        }
+
+        .image-wrapper:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 40px 100px rgba(255, 107, 53, 0.2);
+        }
+
+        .main-image {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-wrapper:hover .main-image {
+            transform: scale(1.08);
+        }
+
+        .image-decoration {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: -1;
+            transition: all 0.6s ease;
+        }
+
+        .decoration-1 {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            top: -80px;
+            right: -80px;
+        }
+
+        .decoration-2 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            bottom: -60px;
+            left: -60px;
+        }
+
+        .image-wrapper:hover .decoration-1 {
+            transform: translate(-20px, 20px) scale(1.2);
+        }
+
+        .image-wrapper:hover .decoration-2 {
+            transform: translate(20px, -20px) scale(1.2);
+        }
+
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            border-radius: 28px;
+            padding: 2px;
+            margin-bottom: 100px;
+            box-shadow: 0 20px 60px rgba(255, 107, 53, 0.15);
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-item {
+            background: white;
+            text-align: center;
+            padding: 50px 30px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-item:first-child {
+            border-radius: 26px 0 0 26px;
+        }
+
+        .stat-item:last-child {
+            border-radius: 0 26px 26px 0;
+        }
+
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(247, 147, 30, 0.1));
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .stat-item:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+            z-index: 2;
+        }
+
+        .stat-number {
+            font-size: 52px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+            transition: all 0.4s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-item:hover .stat-number {
+            transform: scale(1.15);
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 15px;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            border-radius: 35px;
+            padding: 90px 60px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.2), transparent 70%);
+            top: -250px;
+            right: -250px;
+            animation: rotate 20s linear infinite;
+        }
+
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(79, 172, 254, 0.15), transparent 70%);
+            bottom: -200px;
+            left: -200px;
+            animation: rotate 15s linear infinite reverse;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-size: 46px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+
+        .cta-text {
+            font-size: 18px;
+            color: #b0b0b0;
+            margin-bottom: 44px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 20px 44px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.4s ease;
+            box-shadow: 0 12px 30px rgba(255, 107, 53, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .cta-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 45px rgba(255, 107, 53, 0.5);
+        }
+
+        .cta-button-secondary {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: #ffffff;
+            box-shadow: none;
+        }
+
+        .cta-button-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .content-container {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+
+            .content-right {
+                order: -1;
+            }
+
+            .main-image {
+                height: 500px;
+            }
+
+            .stats-section {
+                grid-template-columns: repeat(2, 1fr);
+                border-radius: 28px;
+            }
+
+            .stat-item:first-child {
+                border-radius: 26px 0 0 0;
+            }
+
+            .stat-item:nth-child(2) {
+                border-radius: 0 26px 0 0;
+            }
+
+            .stat-item:nth-child(3) {
+                border-radius: 0 0 0 26px;
+            }
+
+            .stat-item:last-child {
+                border-radius: 0 0 26px 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 60px 24px;
+            }
+
+            .section-title {
+                font-size: 38px;
+            }
+
+            .section-description {
+                font-size: 17px;
+            }
+
+            .feature-item {
+                padding: 28px;
+            }
+
+            .main-image {
+                height: 400px;
+            }
+
+            .stats-section {
+                padding: 50px 30px;
+            }
+
+            .stat-number {
+                font-size: 40px;
+            }
+
+            .cta-section {
+                padding: 60px 30px;
+            }
+
+            .cta-title {
+                font-size: 32px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 32px;
+            }
+
+            .feature-item {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            .stats-section {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-item {
+                border-radius: 0 !important;
+            }
+
+            .stat-item:first-child {
+                border-radius: 26px 26px 0 0 !important;
+            }
+
+            .stat-item:last-child {
+                border-radius: 0 0 26px 26px !important;
+            }
+        }
+    </style>
+
+     <section class="about-section">
+        <div class="floating-element float-1"></div>
+        <div class="floating-element float-2"></div>
+
+        <div class="section-header">
+            <div class="section-badge">
+                <span>✦</span> Quality That Never Compromises
+            </div>
+            <h1 class="section-title">Innovating Moulding Excellence <span class="highlight"> Since 2015 </span></h1>
+            <p class="section-description">
+                Delivering precision-engineered moulds with a focus on quality and innovation.
+Backed by years of expertise and advanced technology to ensure excellence.
+            </p>
+        </div>
+
+        <div class="content-container">
+            <div class="content-left">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="https://thumbs.dreamstime.com/b/baking-mold-four-round-forms-baking-muffins-cupcakes-baking-mold-four-round-forms-baking-delicious-muffins-341408448.jpg" alt="">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Precision Mould Manufacturing</h3>
+                        <p>FIFO Industries delivers high-quality dies and injection moulds backed by 10+ years of expertise.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/10103/10103326.png" alt="">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Quality & Timely Delivery</h3>
+                        <p>We focus on quality, cost efficiency, and reliable on-time delivery to meet every customer requirement.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2421/2421304.png" alt="">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Vision for Industry Leadership</h3>
+                        <p>Our goal is to become a leading name in India’s mould and plastic component manufacturing sector.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <div class="image-decoration decoration-1"></div>
+                <div class="image-decoration decoration-2"></div>
+                <div class="image-wrapper">
+                    <img src="https://t4.ftcdn.net/jpg/05/00/91/81/360_F_500918189_xsBOBFpzqSekBwrIQf2e2A7jwwS5Ntqh.jpg" alt="Team collaboration" class="main-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-item">
+                <div class="stat-number">750+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Your Project?</h2>
+                <p class="cta-text">
+                    Let's collaborate to transform your vision into reality. Our expert team is ready to deliver exceptional results that exceed your expectations.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="cta-button">
+                        Get Started Today →
+                    </a>
+                    <a href="#portfolio" class="cta-button cta-button-secondary">
+                        View Our Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            overflow-x: hidden;
+        } */
+        
+        .mission-vision-section {
+            padding: 0px 0;
+            position: relative;
+                        background: linear-gradient(135deg, #ffffff 0%, #e8eef5 100%);
+
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 1s ease;
+        }
+        
+        .section-header h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+        
+        .section-header p {
+            color: #6c757d;
+            font-size: 1rem;
+            font-weight: 500;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .mission-vision-row {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .mission-card, .vision-card {
+            flex: 1;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            transition: all 0.5s ease;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .mission-card:hover, .vision-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+        }
+        
+        .card-image {
+            height: 280px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .mission-card:hover .card-image img,
+        .vision-card:hover .card-image img {
+            transform: scale(1.1);
+        }
+        
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.3s ease;
+        }
+        
+        .mission-card .card-overlay {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%);
+        }
+        
+        .vision-card .card-overlay {
+            background: linear-gradient(135deg, rgba(250, 112, 154, 0.85) 0%, rgba(254, 225, 64, 0.85) 100%);
+        }
+        
+        .card-icon {
+            font-size: 4rem;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+        
+        .card-content {
+            padding: 35px 30px;
+        }
+        
+        .card-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .mission-card .card-title {
+            color: #667eea;
+        }
+        
+        .vision-card .card-title {
+            color: #fa709a;
+        }
+        
+        .card-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+        
+        .mission-card .card-title::after {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .vision-card .card-title::after {
+            background: linear-gradient(90deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        .mission-card:hover .card-title::after,
+        .vision-card:hover .card-title::after {
+            width: 100px;
+        }
+        
+        .card-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #495057;
+            margin-bottom: 25px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 25px;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            font-size: 0.95rem;
+            color: #6c757d;
+            position: relative;
+            padding-left: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-list li:hover {
+            color: #495057;
+            transform: translateX(5px);
+        }
+        
+        .feature-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            color: white;
+        }
+        
+        .mission-card .feature-list li::before {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .vision-card .feature-list li::before {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .mission-card .stat-box {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+        }
+        
+        .vision-card .stat-box {
+            background: linear-gradient(135deg, rgba(250, 112, 154, 0.1) 0%, rgba(254, 225, 64, 0.1) 100%);
+        }
+        
+        .stat-box:hover {
+            transform: scale(1.05);
+        }
+        
+        /* .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 5px;
+        }
+         */
+        .mission-card .stat-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .vision-card .stat-number {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: #6c757d;
+            font-weight: 500;
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        /* Tablet Styles */
+        @media (max-width: 992px) {
+            .mission-vision-row {
+                flex-direction: column;
+                gap: 40px;
+            }
+            
+            .section-header h2 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .section-header p {
+                font-size: 1rem;
+            }
+            
+            .card-image {
+                height: 220px;
+            }
+            
+            .card-icon {
+                font-size: 3rem;
+            }
+            
+            .card-content {
+                padding: 25px 20px;
+            }
+            
+            .card-title {
+                font-size: 1.6rem;
+            }
+            
+            .card-text {
+                font-size: 0.95rem;
+            }
+            
+            .feature-list li {
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .mission-vision-section {
+                padding: 50px 0;
+            }
+            
+            .section-header {
+                margin-bottom: 40px;
+            }
+            
+            .section-header h2 {
+                font-size: 1.75rem;
+            }
+            
+            .card-image {
+                height: 200px;
+            }
+            
+            .card-content {
+                padding: 20px 15px;
+            }
+            
+            .card-title {
+                font-size: 1.4rem;
+            }
+            
+            .stat-number {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+
+
+     <section class="mission-vision-section" >
+        <div class="container">
+            <!-- Section Header -->
+            <!-- <div class="section-header">
+                <h2> </h2>
+                                    <h1 class="about-title">Our Mission <span class="title-highlight">& Vision</span> </h1>
+                <p>Shaping the Future with Innovation, Quality, and Commitment</p>
+
+            </div> -->
+            
+            <!-- Mission & Vision Cards Side by Side -->
+            <div class="mission-vision-row">
+                <!-- Mission Card -->
+                <div class="mission-card">
+                    <div class="card-image">
+                        <img src="https://t4.ftcdn.net/jpg/05/00/91/81/360_F_500918189_xsBOBFpzqSekBwrIQf2e2A7jwwS5Ntqh.jpg">
+                        <!-- <div class="card-overlay">
+                            <i class="fas fa-bullseye card-icon"></i>
+                        </div> -->
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Our Mission</h3>
+                        <p class="card-text">
+                           Our mission is to develop and deliver high-quality, precision-engineered products at competitive prices, while fostering a culture that supports sustainability, innovation, and customer satisfaction.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Maintaining the highest standards of product quality.</li>
+                            <li>Encouraging environmentally responsible practices</li>
+                            <li>Continuously improving efficiency and productivity.</li>
+                            <li>Empowering our team to achieve operational excellence.</li>
+                        </ul>
+                        <div class="stat-box">
+                            <span class="stat-number">99.8%</span>
+                            <span class="stat-label">Quality Rate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vision Card -->
+                <div class="vision-card">
+                    <div class="card-image">
+                        <img src="https://img.freepik.com/premium-photo/metalworking-cnc-milling-machine-cutting-metal-modern-processing-technology-small-depth-field-warning-authentic-shooting-challenging-conditions-little-bit-grain-maybe-blurred_564276-3700.jpg?semt=ais_hybrid&w=740&q=80" alt="Our Vision">
+                        
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Our Vision</h3>
+                        <p class="card-text">
+                          Star Industries Manufacturing, our vision is to carry forward our legacy and establish ourselves as a leading Indian manufacturer recognized for excellence, innovation, and uncompromising quality in every product we deliver.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Setting new benchmarks in manufacturing excellence.</li>
+                            <li>Building long-term trust through superior quality and reliability.</li>
+                            <li>Adopting modern technologies for continuous improvement</li>
+                            <li>Expanding our reach to serve global markets with pride.</li>
+                        </ul>
+                        <div class="stat-box">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Countries Served</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.mission-card, .vision-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.8s ease';
+            observer.observe(card);
+        });
+        
+        // Counter animation
+        const animateCounter = (el) => {
+            const text = el.textContent;
+            const target = parseFloat(text);
+            const isPercent = text.includes('%');
+            const isPlus = text.includes('+');
+            
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    el.textContent = target + (isPercent ? '%' : isPlus ? '+' : '');
+                    clearInterval(timer);
+                } else {
+                    el.textContent = Math.floor(current) + (isPercent ? '%' : isPlus ? '+' : '');
+                }
+            }, 30);
+        };
+        
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const number = entry.target.querySelector('.stat-number');
+                    if (number && !number.classList.contains('animated')) {
+                        number.classList.add('animated');
+                        animateCounter(number);
+                    }
+                    statObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        document.querySelectorAll('.stat-box').forEach(stat => {
+            statObserver.observe(stat);
+        });
+    </script>
+
+        <!-- FOOTER
+        ================================================== -->
+        <style>
+      .footer-style01 {
+        position: relative;
+        background: url('https://www.cxhctl.com/wp-content/uploads/2024/12/images.png') center center/cover no-repeat;
+        color: #fff;
+        overflow: hidden;
+        padding: 40px 0px;
+      }
+
+      .footer-style01 .footer-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.611);
+        /* light overlay */
+        backdrop-filter: brightness(0.7);
+        z-index: 1;
+      }
+
+      .footer-style01 .container {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* link colors */
+      .footer-style01 a {
+        color: #f1f1f1;
+        transition: color 0.3s ease;
+      }
+
+      .footer-style01 a:hover {
+        color: #ffcc00;
+      }
+
+      /* make text readable */
+      .footer-style01 p,
+      .footer-style01 h3 {
+        color: #fff;
+        z-index: 2;
+        position: relative;
+      }
+
+      /* responsive tweak */
+      @media (max-width: 768px) {
+        .footer-style01 {
+          text-align: center;
+        }
+      }
+    </style>
+      <!-- brand-area-end -->
+    </main>
+    <!-- main-area-end -->
+
+    <!-- footer -->
+    <footer class="footer fifo-eng-footer text-dark pt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo & Description -->
+          <!-- <div class="col-md-3 mb-4">
+            <img
+              src="img/logo/fifo-eng-logo.png"
+              alt="FD Group Logo"
+              class="mb-3"
+              style="width: 150px"
+            />
+          </div> -->
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase font-weight-bold mb-3">Contact</h6>
+            <p style="color: white">
+              <i class="fas fa-map-marker-alt mr-2" style="color: white"></i>
+              103/104, S Block, MIDC, Bhosari, Pimpri-Chinchwad, Maharashtra
+              411026
+            </p>
+            <p style="color: white">
+              <i class="fas fa-phone-alt mr-2" style="color: #fff"></i>+91
+              8983400365
+            </p>
+            <p style="color: white">
+              <i class="fas fa-phone-alt mr-2" style="color: #fff"></i>+91
+              9112129999
+            </p>
+            <p style="color: white">
+              <i class="fas fa-envelope mr-2" style="color: #fff"></i
+              >fifoengineering7@gmail.com
+            </p>
+          </div>
+
+          <!-- Services -->
+          <div class="col-md-2 mb-4">
+            <h6 class="text-uppercase font-weight-bold mb-3">Services</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> FIFO Engineering</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> FIFO Industries</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> 3D Polymer</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-2 mb-4">
+            <h6 class="text-uppercase font-weight-bold mb-3">Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> About </a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Products </a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Our Machine</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Gallery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Clients</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase font-weight-bold mb-3">Location</h6>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.747925215351!2d73.83598937496575!3d18.630404382484567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b90e9a0880e5%3A0xc988a0fc21114924!2sFIFO_ENGINEERING!5e0!3m2!1sen!2sin!4v1764399946827!5m2!1sen!2sin"
+              width="100%"
+              height="220"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- Contact Info -->
+        </div>
+
+        <!-- <div class="text-center">
+          <p class="mb-0">© 2025 FD GROUP. All Rights Reserved.</p>
+        </div> -->
+      </div>
+    </footer>
+    <div class="container">
+      <div class="copyright-wrap">
+        <div class="copyright-text fifo-eng text-center">
+          <p>
+            FIFO Engineering. All rights reserved. © Design &amp; Developed By
+            <a href="https://netcom-india.com/" target="_blank"
+              ><b> NetCom Business Solutions Pvt. ltd. </b></a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- footer-end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/one-page-nav-min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/js_isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/parallax-scroll.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/element-in-view.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
